@@ -1,6 +1,7 @@
 import boto3
 import paramiko
 import datetime
+#Deletes the EC2 EBS snapshots
 from botocore.exceptions import ClientError
 ses=boto3.Session(profile_name="abc", region_name="us-east-2")
 client=ses.client(service_name="ec2")
